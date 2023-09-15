@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinkgeldrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>money, money, money</h2>
+      <form onsubmit="return false">
+        <label for="bill">Wie hoch war die Rechnung?</label>
+        <input type="number" id="bill" />
+        <label for="people">Wie viele Menschen teilen sich die Rechnung?</label>
+        <input type="number" id="people" />
+        <select id="service">
+          <option value="">Wie war der Service?</option>
+          <option value="Schlecht" class="bad">Schlecht</option>
+          <option value="Gut" class="good">Gut</option>
+          <option value="Super" class="super">Super</option>
+        </select>
+        <button onclick="tipCalculate()">Berechne</button>
+      </form>
+
+      <p class="tip"></p>
+      <p class="fullBill"></p>
+      <p class="pizza"></p>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
